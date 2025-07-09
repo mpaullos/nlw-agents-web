@@ -12,5 +12,24 @@
     "source.organizeImports.biome": "explicit"
   },
   "biome.enabled": true,
-	"biome.lsp.bin": "./node_modules/.bin/biome"
+  "biome.lsp.bin": "./node_modules/.bin/biome",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "postcss.validate": true,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  }
 }
